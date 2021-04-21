@@ -90,35 +90,42 @@ textarea {
 
    html {
      font-size: 16px;
+     color: #e2e3ed;
     }
 
    body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     text-align: left;
     }
 
    ul,
    ol {
-
+     list-style-type: none;
    }
 
    a {
-
+     color: #e2e3ed;
+     text-decoration: none;
    }
 
    h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 1.875em;
+    font-weight: 500;
    }
 
    h3,
    h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.125em;
+    font-weight: 500;
    }
 
    p {
-
+    font-size: .875em;
+    line-height: 1.285;
+    font-weight: normal;
    }
 
    img {
@@ -130,20 +137,13 @@ textarea {
    }
 
    address {
-
+    font-style: normal;
    }
 
    .content-wrapper {
-
-   }
-
-
-
-
-.content-wrapper {
    width: 90%;
    margin: 50px 0;
- }
+   }
 
 
 /*---------Base Header and Footer-------*/
@@ -153,6 +153,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: black;
 }
 
 /* Header style*/
@@ -173,6 +174,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
  header nav {
@@ -181,6 +183,8 @@ header .content-wrapper {
    align-items: center;
    flex-flow: row wrap;
    width: 60%;
+   font-size: 1.125em;
+   font-weight: 700;
  }
 
 header nav ul {
@@ -189,10 +193,14 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
 /*---Footer---*/
 
 footer {
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -231,6 +239,13 @@ footer .contact {
    flex-flow:row wrap;
  }
 
+ .hero-area h1 {
+   font-size: 2.25em;
+   font-family: 'Poppins', Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   line-height: 1.2;
+ }
+
  /*--ASIDE--*/
 
  aside {
@@ -238,6 +253,33 @@ footer .contact {
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
+   background-color: #527158;
+ }
+
+ aside .form {
+   margin-top: 30px;
+ }
+
+ input[type=text] {
+   box-sizing: border-box;
+   width: 100%;
+   color: #2a423a;
+   font-style: italic;
+   padding: 1em;
+ }
+
+ input[type=button] {
+   width: 100%;
+   padding: 20px 0;
+   margin-top: 20px;
+   background-color: #2a423a;
+   font-family: 'Poppins', Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-size: 1.125em;
+   color: #e2e3ed;
+   border: none;
+   text-align: center;
+   text-transform: uppercase;
  }
 
  /*--FEATURES--*/
@@ -262,6 +304,7 @@ footer .contact {
 
  .features p {
    margin: 0;
+   text-align: center;
    }
 
 .features h2 {
@@ -274,10 +317,12 @@ footer .contact {
    display: flex;
    justify-content: center;
    flex-flow: row wrap;
+   background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -418,7 +463,9 @@ footer .contact {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width:768px) {
+
+
+ @media only screen and (min-width:768px) {
     /*Tablet styles here*/
 
     /* General styles */
