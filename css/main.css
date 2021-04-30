@@ -130,10 +130,13 @@ textarea {
 
    img {
 
+     width: 100%;
+
    }
 
    figure {
 
+      margin: 0;
    }
 
    address {
@@ -196,6 +199,14 @@ header nav ul {
 header nav ul li {
   font-size: 1.125em;
 }
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 /*---Footer---*/
 
 footer {
@@ -236,8 +247,12 @@ footer .contact {
  .hero-area {
    display: flex;
    justify-content: center;
+   align-items: center;
    flex-flow:row wrap;
- }
+   background: url('img/hero-image.jpg') center no-repeat #333;
+   background-position: center;
+}
+
 
  .hero-area h1 {
    font-size: 2.25em;
@@ -288,6 +303,10 @@ footer .contact {
    display: flex;
    justify-content: center;
    flex-flow: row wrap;
+   background: url('img/background-image.jpg') center no-repeat #333;
+   background-position: center;
+ }
+
 }
 
  .features article {
@@ -496,6 +515,15 @@ footer .contact {
     .header-divider {
       display: none;
     }
+
+    header figure {
+      width: 28%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+
+    }
     /* Hero Area */
 
     /* Aside */
@@ -604,6 +632,14 @@ footer .contact {
     .content-wrapper {
          max-width: 960px;
     }
+
+     header figure {
+       width: 23%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-flow: row wrap;
+     }
 
      /* Hero */
     .hero-area h1 {
