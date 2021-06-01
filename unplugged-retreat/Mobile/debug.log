@@ -183,3 +183,4 @@
 [0316/112144.689:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
 [0330/105906.433:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
 [0330/105907.307:ERROR:local_storage_context_mojo.cc(706)] Lost connection to database
+[0516/190502.894:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.

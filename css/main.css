@@ -156,7 +156,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: black;
+  background-color: #202322;
 }
 
 /* Header style*/
@@ -239,6 +239,10 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
+
  /*-------Mobile Styles - Homepage-----*/
 
 
@@ -249,9 +253,9 @@ footer .contact {
    justify-content: center;
    align-items: center;
    flex-flow:row wrap;
-   background: url('img/hero-image.jpg') center no-repeat #333;
-   background-position: center;
-}
+   background: url('../img/hero-image.jpg') center no-repeat #333;
+   background-size: cover;
+ }
 
 
  .hero-area h1 {
@@ -259,6 +263,8 @@ footer .contact {
    font-family: 'Poppins', Helvetica, Arial, sans-serif;
    font-weight: 500;
    line-height: 1.2;
+   margin-bottom: 300px;
+   min-height: 500px;
  }
 
  /*--ASIDE--*/
@@ -303,11 +309,9 @@ footer .contact {
    display: flex;
    justify-content: center;
    flex-flow: row wrap;
-   background: url('img/background-image.jpg') center no-repeat #333;
-   background-position: center;
+   background: url('../img/background-image.jpg') center no-repeat #333;
+   background-size: cover;
  }
-
-}
 
  .features article {
    width: 63%;
@@ -355,6 +359,7 @@ footer .contact {
     -------------------------------------------------------------------------*/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,6 +367,7 @@ footer .contact {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,6 +384,7 @@ footer .contact {
 -   -------------------------------------------------------------------------*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,9 +397,21 @@ footer .contact {
   align-items: center;
   flex-flow: row wrap;
   width: 90%;
-  margin: 0px 6px;
+  margin: 50px 0 0 0;
 }
 
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
 
 /* ==========================================================================
    Helper classes
@@ -484,11 +503,11 @@ footer .contact {
 
 
 
- @media only screen and (min-width:768px) {
+ @media only screen and (min-width:768px){
     /*Tablet styles here*/
 
     /* General styles */
-    .content-wrapper {
+  .content-wrapper {
       max-width: 640px;
       margin: 100px 0;
     }
@@ -516,15 +535,11 @@ footer .contact {
       display: none;
     }
 
+    /* Hero Area */
+
     header figure {
       width: 28%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-
-    }
-    /* Hero Area */
+     }
 
     /* Aside */
     aside .content-wrapper {
@@ -588,25 +603,30 @@ footer .contact {
        About Page
        ========================================================================== */
 
-       .mission-content {
+   .mission-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
         }
 
-        .mission-content p {
-            width: 36%;
+  .mission-content p {
+            width: 45%;
         }
 
-        .contact-section .content-wrapper h2 {
+  .contact-section .content-wrapper h2 {
             width: 81%
         }
 
-        .contact-content {
+  .contact-content {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-    }
+       }
+
+ .contact-content h4 {
+         font-size: 1.5em;
+       }
 
 
     /* ==========================================================================
@@ -623,38 +643,47 @@ footer .contact {
         .faq h2 {
             width: 100%;
         }
+
+.faq h4,
+.faq p {
+    font-size: .875em;
+    line-height: 1.125;
+}
+
+      }
 /*=================================================================================================================
                                                  DESKTOP MEDIA
 =================================================================================================================*/
 
-        @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1200px){
 /*Desktop styles here */
     .content-wrapper {
          max-width: 960px;
     }
 
+       /* Hero */
+
      header figure {
        width: 23%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-flow: row wrap;
      }
 
-     /* Hero */
     .hero-area h1 {
         width: 75%;
     }
 
     /* Aside */
     aside .content-wrapper {
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
-        width: 83%
+        width: 30%;
     }
+
+    .form-description p {
+    font-size: 1.125em;
+  }
 
     /* Features */
     .features h2 {
