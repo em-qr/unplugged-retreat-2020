@@ -228,6 +228,8 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.25em;
+  margin: 0px 20px;
 }
 
 footer .content-wrapper {
@@ -340,9 +342,6 @@ footer .copyright {
   margin-bottom: 40px;
 }
 
-.features-item-description {
-  font-size: 1em;
-}
 
 /*-----------------REVIEWS-----------*/
 
