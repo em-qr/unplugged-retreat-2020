@@ -315,7 +315,7 @@ footer .copyright {
 
  .features article {
    width: 63%;
-   margin: 30px 0;
+   margin: 30px 0px;
  }
 
  .features .features-items {
@@ -328,10 +328,20 @@ footer .copyright {
  .features p {
    margin: 0;
    text-align: center;
+   font-size: 1.25em;
    }
 
 .features h2 {
   margin-bottom: 60px;
+}
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.features-item-description {
+  font-size: 1em;
 }
 
 /*-----------------REVIEWS-----------*/
@@ -644,21 +654,10 @@ footer .copyright {
          font-size: 1.5em;
        }
 
-       .map figure {
-           width: 100%;
-           height: 0;
-           padding-bottom: 45%;
-           overflow: hidden;
-           position: relative;
-       }
+ .map figure {
+          padding-bottom: 45%;
+}
 
-       .map iframe {
-           width: 100%;
-           height: 100%;
-           position: absolute;
-           top: 0;
-           left: 0;
-       }
 
     /* ==========================================================================
        FAQ Page
@@ -753,21 +752,10 @@ footer .copyright {
    }
 
 
-          .map figure {
-              width: 100%;
-              height: 0;
-              padding-bottom: 35%; 
-              overflow: hidden;
-              position: relative;
-          }
+    .map figure {
+       padding-bottom: 35%;
+    }
 
-          .map iframe {
-              width: 100%;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-          }
 
 /* ==========================================================================
    FAQ Page
