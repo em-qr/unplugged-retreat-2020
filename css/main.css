@@ -102,6 +102,8 @@ textarea {
    ul,
    ol {
      list-style-type: none;
+     margin: 0;
+     padding: 0;
    }
 
    a {
@@ -113,6 +115,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
     font-weight: 500;
+    margin: 0;
    }
 
    h3,
@@ -120,23 +123,21 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
     font-weight: 500;
+    margin: 20px 0;
    }
 
    p {
     font-size: .875em;
     line-height: 1.285;
-    font-weight: normal;
    }
 
    img {
-
      width: 100%;
+    }
 
-   }
 
    figure {
-
-      margin: 0;
+     margin: 0;
    }
 
    address {
@@ -225,16 +226,18 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.25em;
-  margin: 0px 20px;
-}
+  width: 40%;
+  height:40%;
+  }
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 
 footer .contact {
@@ -257,6 +260,7 @@ footer .copyright {
    flex-flow:row wrap;
    background: url('../img/hero-image.jpg') center no-repeat #333;
    background-size: cover;
+   min-height: 500px;
  }
 
 
@@ -266,7 +270,7 @@ footer .copyright {
    font-weight: 500;
    line-height: 1.2;
    margin-bottom: 300px;
-   min-height: 500px;
+   font-size: 4em;
  }
 
  /*--ASIDE--*/
@@ -317,7 +321,7 @@ footer .copyright {
 
  .features article {
    width: 63%;
-   margin: 30px 0px;
+   margin: 30px 0;
  }
 
  .features .features-items {
@@ -330,7 +334,6 @@ footer .copyright {
  .features p {
    margin: 0;
    text-align: center;
-   font-size: 1.25em;
    }
 
 .features h2 {
@@ -359,7 +362,12 @@ footer .copyright {
 
 .reviews h3 {
   width: 55%;
-  margin: 20px 0;
+  margin: 10px 0 0 10px;
+  font-size: 1.5em;
+}
+
+.reviews p {
+  margin-left: 10px;
 }
 
 
@@ -436,6 +444,10 @@ footer .copyright {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
+}
+
+.faq-content p {
+    line-height: 2;
 }
 
 /* ==========================================================================
@@ -556,17 +568,29 @@ footer .copyright {
       justify-content: space-between;
     }
 
+    header figure {
+      width: 28%;
+     }
+
+
     .header-divider {
       display: none;
     }
 
     /* Hero Area */
 
-    header figure {
-      width: 28%;
-     }
+    .hero-area {
+      min-height: 600px;
+    }
+
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+    }
 
     /* Aside */
+
     aside .content-wrapper {
       margin: 50px 0;
       display: flex;
@@ -590,8 +614,17 @@ footer .copyright {
     }
 
     .features .features-item-description {
-      width: 100%;
+      width: 62%;
     }
+
+    .features h2 {
+      margin-bottom: 20px;
+    }
+
+    .features i {
+      margin-bottom: 30px;
+    }
+
 
     /* Reviews */
     .reviews article {
@@ -599,8 +632,18 @@ footer .copyright {
       justify-content: space-between;
     }
 
+    .reviews h2 {
+      width: 85%;
+    }
+
+    .reviews article figure,
     .reviews article div {
       width: 49%;
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
 
     /* Footer */
@@ -611,16 +654,32 @@ footer .copyright {
 
     .footer-content {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
     }
 
     footer .contact {
       margin-bottom: 0;
     }
 
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+
+    footer p {
+      line-height: 1.285;
+    }
+
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
+    }
+
     footer .copyright {
-      width: 60%;
+      width: 100%;
     }
 
 
@@ -632,7 +691,7 @@ footer .copyright {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding-top: 20px;
         }
 
   .mission-content p {
@@ -640,7 +699,9 @@ footer .copyright {
         }
 
   .contact-section .content-wrapper h2 {
-            width: 81%
+            width: 81%;
+            font-size: 2.75em;
+            margin:0;
         }
 
   .contact-content {
@@ -689,15 +750,29 @@ footer .copyright {
     .content-wrapper {
          max-width: 960px;
     }
+    h2 {
+      font-size: 2.25em;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.875em;
+    }
+
+    p {
+        font-size: 1.125em;
+        line-height: 1.333;
+    }
+
+    header figure {
+      width: 23%;
+    }
 
        /* Hero */
 
-     header figure {
-       width: 23%;
-     }
-
-    .hero-area h1 {
+     .hero-area h1 {
         width: 75%;
+        width: 80%;
     }
 
     /* Aside */
@@ -720,7 +795,7 @@ footer .copyright {
     }
 
     .features article {
-        flex-basis: 320px;
+        flex-basis: 33%;
     }
 
     /* Reviews */
@@ -743,7 +818,7 @@ footer .copyright {
    .mission h2,
    .contact-section .content-wrapper h2 {
        width: 95%;
-       font-size: 3em;
+       font-size: 2.75em;
    }
 
    .contact-content h4 {
