@@ -199,6 +199,7 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+  text-transform: uppercase;
 }
 
 header figure {
@@ -231,8 +232,8 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height:40%;
+  width: 20%;
+  height:20%;
   }
 
 footer .content-wrapper {
@@ -270,7 +271,6 @@ footer .copyright {
    font-weight: 500;
    line-height: 1.2;
    margin-bottom: 300px;
-   font-size: 4em;
  }
 
  /*--ASIDE--*/
@@ -643,7 +643,8 @@ footer .copyright {
 
     .reviews h3 {
       width: 75%;
-      margin: 0;
+      margin: 0 0 0 10px;
+
     }
 
     /* Footer */
@@ -734,11 +735,11 @@ footer .copyright {
             width: 100%;
         }
 
-.faq h4,
-.faq p {
-    font-size: .875em;
-    line-height: 1.125;
-}
+       .faq h4,
+       .faq p {
+           font-size: .875em;
+           line-height: 1.125;
+      }
 
       }
 /*=================================================================================================================
@@ -771,8 +772,8 @@ footer .copyright {
        /* Hero */
 
      .hero-area h1 {
-        width: 75%;
-        width: 80%;
+        width: 85%;
+        margin-bottom: 400px;
     }
 
     /* Aside */
@@ -804,9 +805,15 @@ footer .copyright {
     }
 
 
-      .reviews h2 {
-        padding-bottom: 50px;
-      }
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
+
+    .reviews h3 {
+      margin-left: 10px;
+    }
+
+    /*Footer*/
 
       footer h4 {
         font-size: 1.875em;
